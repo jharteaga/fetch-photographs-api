@@ -35,17 +35,23 @@
   background-color: #0f0;
   border-radius: 10px;
   border: 2px solid black;
-  box-shadow: 0.1px 1.5px 1px 1px;
   font-family: "Bree Serif", serif;
   font-size: 1.2rem;
-  width: 10%;
-  padding: 0.3em 0;
+  width: 200px;
+  padding: 0.5em 0;
+}
+
+.header-container button:hover {
+  cursor: pointer;
+  background-color: yellow;
+  box-shadow: 0 0.1px 20px rgba(157, 196, 18, 0.836),
+    0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* Styling Photo Container */
 .photos-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 1100px;
