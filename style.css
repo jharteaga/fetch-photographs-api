@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-.header-container button {
+.activated {
   background-color: #0f0;
   border-radius: 10px;
   border: 2px solid black;
@@ -41,13 +41,18 @@
   font-size: 1.2rem;
   width: 200px;
   padding: 0.5em 0;
+  outline: none;
 }
 
-.header-container button:hover {
+.activated:hover {
   cursor: pointer;
   background-color: yellow;
   box-shadow: 0 0.1px 20px rgba(157, 196, 18, 0.836),
     0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }
 
 /* Styling Photo Container */
@@ -70,6 +75,18 @@
   height: 300px;
 }
 
+.deactivated {
+  cursor: pointer;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-family: "Bree Serif", serif;
+  font-size: 1.2rem;
+  width: 200px;
+  padding: 0.5em 0;
+  outline: none;
+}
+
 /* Media Queries for mobile design */
 
 @media (max-width: 775px) {
@@ -90,7 +107,6 @@
   .photos-container {
     max-width: 95%;
     margin: 1em auto;
-    border: 1px solid magenta;
     justify-content: space-evenly;
   }
 

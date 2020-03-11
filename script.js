@@ -15,4 +15,5 @@ button.addEventListener("click", (e) => {
       });
       container.innerHTML = photos;
     });
+  button.style.display = "none";
 });
