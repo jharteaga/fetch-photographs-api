@@ -22,6 +22,7 @@
   font-size: 3rem;
   color: #fff;
   margin: 0;
+  text-align: center;
 }
 
 .header-container p {
@@ -29,6 +30,7 @@
   font-size: 1.2rem;
   margin: 0.7em;
   color: #fff;
+  text-align: center;
 }
 
 .header-container button {
@@ -66,4 +68,33 @@
 .photo img {
   width: 350px;
   height: 300px;
+}
+
+/* Media Queries for mobile design */
+
+@media (max-width: 775px) {
+  .header-container h1 {
+    font-size: 2.6rem;
+  }
+
+  .header-container p {
+    font-size: 1.2rem;
+  }
+
+  .header-container button {
+    font-size: 1.1rem;
+    width: 150px;
+    padding: 0.5em 0;
+  }
+
+  .photos-container {
+    max-width: 95%;
+    margin: 1em auto;
+    border: 1px solid magenta;
+    justify-content: space-evenly;
+  }
+
+  .photo img {
+    max-width: 100%;
+  }
 }
